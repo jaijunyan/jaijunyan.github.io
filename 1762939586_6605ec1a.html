@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长文档</title>
+    <style>
+        body {
+            width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: "Microsoft YaHei", sans-serif;
+            font-size: 12pt;
+            line-height: 22pt;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-family: SimSun, serif;
+            color: red;
+            font-size: 14pt;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            text-indent: 0;
+            font-weight: bold;
+        }
+        h2 {
+            font-family: SimHei, sans-serif;
+            color: blue;
+            font-size: 12pt;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            text-indent: 0;
+            font-weight: bold;
+        }
+        p {
+            font-family: "Microsoft YaHei", sans-serif;
+            font-size: 12pt;
+            text-indent: 2em;
+            line-height: 22pt;
+            margin: 0.5em 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+            border: 1px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        ul, ol {
+            margin: 0.5em 0;
+            padding-left: 2em;
+        }
+        li {
+            font-family: "Microsoft YaHei", sans-serif;
+            font-size: 12pt;
+            line-height: 22pt;
+            text-indent: 0;
+            margin: 0.2em 0;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:210mm; margin:0 auto;">
+<h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">四、技术性能要求</h2>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）高效液相色谱仪</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★1. 输液泵</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>四元梯度泵，最大压力600bar；流速范围0.001-10mL/min，精度≤0.075%RSD。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★2. 自动进样器</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>样品位数≥120位；进样精度＜0.5%RSD；具备样品冷却功能（4-40℃）。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">3. 柱温箱</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>温控范围：室温以上5℃-80℃，控制精度±0.5℃，可容纳300mm色谱柱。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★4. 检测器(DAD)</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>波长范围190-800nm，光谱带宽≤4nm，基线噪音≤±1×10-5 AU。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）气相色谱仪</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★1. 进样口</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>分流/不分流进样口，最高使用温度450℃，电子气路控制（EPC）。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★2. 柱温箱</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>室温＋3℃～450℃，最大升温速率100℃/min，可编程多阶升温。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★3. 检测器</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>配置FID和ECD检测器，FID检测限≤5pg C/s，ECD检测限≤0.02pg/s。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（三）紫外分光光度计</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★1. 光学性能</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>波长范围190-1100nm，光谱带宽≤2nm，波长准确度±0.5nm。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">2. 光度性能</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>光度范围-4.0～4.0Abs，光度准确度±0.002Abs（0-0.5Abs）。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（四）液相色谱-质谱联用仪</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★1. 离子源</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>配置电喷雾离子源（ESI）和大气压化学离子源（APCI），可快速切换。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★2. 质量分析器</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>质量数范围：50～2000 m/z；分辨率：单位质量分辨；扫描速度≥10000u/sec。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★3. 真空系统</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>配置分子涡轮泵，极限真空度≤5×10-5 Torr，15分钟内达到工作真空。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（五）数据处理系统</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">1. 硬件要求</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>工作站电脑配置不低于Intel Core i5处理器，8GB内存，1TB硬盘，23英寸显示器。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★2. 软件要求</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>配备符合FDA 21 CFR Part 11要求的色谱数据工作站，支持电子签名、审计追踪功能。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（六）验证要求</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>供应商需提供完整的IQ/OQ/PQ验证文件（安装、运行、性能确认），并协助完成设备确认。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（七）资质认证要求</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>设备必须具有中国计量器具型式批准证书（CMA）或进口计量器具型式批准证书。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（八）培训要求</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>供应商需提供不少于16学时的现场操作和维护培训，并提供中文版操作和维护手册。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（九）售后服务要求</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>提供至少1年免费保修，4小时响应，48小时内到场维修。终身提供维修服务及备件供应。</p>
+
+<p style="font-family:宋体; font-size:10.5pt; text-indent:0; text-align:center;">（以下空白）</p>
+
+<div style="page-break-after: always;">
+
+<h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">第三篇 谈判项目合同条款及格式</h1>
+
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">供应商的响应文件须满足本篇提出的商务要求，否则其响应将被拒绝。</p>
+
+<p style="font-family:宋体; font-size:10.5pt; text-indent:0; text-align:center;">（本页为公示内容格式，具体商务条款详见招标文件）</p>
+
+<div style="page-break-after: always;">
+
+<h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">第四篇 响应文件格式</h1>
+
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">供应商应按照本篇要求的格式和内容顺序编制响应文件。响应文件应包含但不限于下列内容，否则将被视为响应无效。</p>
+
+<p style="font-family:宋体; font-size:10.5pt; text-indent:0; text-align:center;">（本页为响应文件格式要求，具体格式模板详见招标文件）</p>
+
+<div style="page-break-after: always;">
+
+<h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">第二篇 谈判项目技术（质量）需求</h1>
+
+<blockquote style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">
+  <p style="font-weight:bold;">说明：</p>
+  <p>以下"★"条款或"必须"条款为实质性要求，不允许负偏离，否则作无效响应处理。</p>
+</blockquote>
+
+<h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">★ 一、项目概况</h2>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">本项目为制药企业质量控制实验室设备采购。为满足《中国药典》（2020年版）及GMP（2010年修订）附录的强制要求，现公开采购高效液相色谱仪等精密分析设备。设备需于合同签订后45日内完成安装调试并投入正式使用。</p>
+
+<h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">★ 二、项目需求清单</h2>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt; font-weight:bold;">设备清单：</p>
+<table style="width:100%; border:1px solid black; border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">序号</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">设备名称</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">数量</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">单位</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">关键参数要求</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">1</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">高效液相色谱仪</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">3</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">套</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">四元梯度泵，DAD检测器</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">2</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">气相色谱仪</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">2</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">套</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">FID/ECD双检测器，自动进样器</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">3</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">紫外分光光度计</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">5</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">台</td>
+      <td style="border:1px solid black; text-align:center; font-family:宋体; font-size:12pt; line-height:normal;">波长范围190-1100nm</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">★ 三、设备技术范围、要求及标准</h2>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）目的</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">本文件明确采购设备的技术规范和质量标准，作为设备设计、验收及验证的依据，确保其符合药品质量控制要求。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）适用范围</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">本URS适用于本次采购的【实验室分析设备】项目。</p>
+
+<h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">四、技术性能要求</h2>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）高效液相色谱仪</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★1. 输液泵</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>四元梯度泵，最大压力600bar；流速范围0.001-10mL/min，精度≤0.075%RSD。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★2. 自动进样器</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>样品位数≥120位；进样精度＜0.5%RSD；具备样品冷却功能（4-40℃）。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">3. 柱温箱</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>温控范围：室温以上5℃-80℃，控制精度±0.5℃，可容纳300mm色谱柱。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★4. 检测器(DAD)</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>波长范围190-800nm，光谱带宽≤4nm，基线噪音≤±1×10-5 AU。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）气相色谱仪</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★1. 进样口</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>分流/不分流进样口，最高使用温度450℃，电子气路控制（EPC）。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★2. 柱温箱</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>室温＋3℃～450℃，最大升温速率100℃/min，可编程多阶升温。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★3. 检测器</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>配置FID和ECD检测器，FID检测限≤5pg C/s，ECD检测限≤0.02pg/s。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（三）紫外分光光度计</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★1. 光学性能</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>波长范围190-1100nm，光谱带宽≤2nm，波长准确度±0.5nm。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">2. 光度性能</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>光度范围-4.0～4.0Abs，光度准确度±0.002Abs（0-0.5Abs）。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（四）液相色谱-质谱联用仪</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★1. 离子源</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>配置电喷雾离子源（ESI）和大气压化学离子源（APCI），可快速切换。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★2. 质量分析器</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>质量数范围：50～2000 m/z；分辨率：单位质量分辨；扫描速度≥10000u/sec。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★3. 真空系统</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>配置分子涡轮泵，极限真空度≤5×10-5 Torr，15分钟内达到工作真空。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（五）数据处理系统</h3>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">1. 硬件要求</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>工作站电脑配置不低于Intel Core i5处理器，8GB内存，1TB硬盘，23英寸显示器。</p>
+
+<h4 style="font-family:黑体; font-size:12pt; text-indent:0;">★2. 软件要求</h4>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>配备符合FDA 21 CFR Part 11要求的色谱数据工作站，支持电子签名、审计追踪功能。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（六）验证要求</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>供应商需提供完整的IQ/OQ/PQ验证文件（安装、运行、性能确认），并协助完成设备确认。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（七）资质认证要求</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>设备必须具有中国计量器具型式批准证书（CMA）或进口计量器具型式批准证书。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（八）培训要求</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>供应商需提供不少于16学时的现场操作和维护培训，并提供中文版操作和维护手册。</p>
+
+<h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（九）售后服务要求</h3>
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>必须实现功能：</strong>提供至少1年免费保修，4小时响应，48小时内到场维修。终身提供维修服务及备件供应。</p>
+
+<p style="font-family:宋体; font-size:10.5pt; text-indent:0; text-align:center;">（以下空白）</p>
+
+<div style="page-break-after: always;">
+
+<h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">第三篇 谈判项目合同条款及格式</h1>
+
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">供应商的响应文件须满足本篇提出的商务要求，否则其响应将被拒绝。</p>
+
+<p style="font-family:宋体; font-size:10.5pt; text-indent:0; text-align:center;">（本页为公示内容格式，具体商务条款详见招标文件）</p>
+
+<div style="page-break-after: always;">
+
+<h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">第四篇 响应文件格式</h1>
+
+<p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">供应商应按照本篇要求的格式和内容顺序编制响应文件。响应文件应包含但不限于下列内容，否则将被视为响应无效。</p>
+
+<p style="font-family:宋体; font-size:10.5pt; text-indent:0; text-align:center;">（本页为响应文件格式要求，具体格式模板详见招标文件）</p>
+
+<div style="page-break-after: always;">
+
+--- ITEM SEPARATOR ---
+
+请保留原格式并移除处理说明。
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">★（三）引用标准</h2>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">（若服务期间颁布新标准，按最新标准执行）</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">本次采购严格执行以下标准：</p>
+  <ol style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">药品生产质量管理规范（GMP 2010年修订）及附录</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">GMP指南（2023版）</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">GEP良好工程管理规范</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">《中国药典》2020年版四部</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">采购人《QC实验室仪器管理规程》（SMP-QC-012）</li>
+  </ol>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">（四）缩写与定义</h2>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">***（待采购人补充）***</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">★（五）系统/设备描述</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">1. 用途</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">高效液相色谱仪用于原料药含量测定；气相色谱仪用于溶剂残留检测；紫外分光光度计用于溶出度测定。</p>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">2. 生产工艺过程描述</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">***（本项目不涉及生产工艺环节）***</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">★（六）技术要求</h2>
+  <ol style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;"><strong>合规性要求</strong>：</li>
+    <ul style="padding-left:2em;">
+      <li style="font-size:12pt; text-indent:0; line-height:28pt;">所有设备必须通过CMA计量认证</li>
+      <li style="font-size:12pt; text-indent:0; line-height:28pt;">提供安装确认（IQ）、运行确认（OQ）模板</li>
+    </ul>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;"><strong>技术参数</strong>：</li>
+    <ul style="padding-left:2em;">
+      <li style="font-size:12pt; text-indent:0; line-height:28pt;">高效液相色谱仪：保留时间重复性RSD≤0.5%</li>
+      <li style="font-size:12pt; text-indent:0; line-height:28pt;">气相色谱仪：柱温箱控温精度±0.1℃</li>
+      <li style="font-size:12pt; text-indent:0; line-height:28pt;">紫外分光光度计：光度重复性±0.001A</li>
+    </ul>
+  </ol>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">★（七）服务要求</h2>
+  <ol style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">质保期≥3年，48小时内到达现场的应急服务</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">提供每年2次预防性维护及操作人员现场培训</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">交付要求：设备包装须符合ISTA 3A运输标准</li>
+  </ol>
+
+--- ITEM SEPARATOR ---
+
+start
+---
+
+现在开始处理输入内容：
+以下是用户提供的原始文本，我将移除其中的处理说明和转换提示，只保留原始内容：
+
+# 人工智能的发展
+
+人工智能是当今科技领域的热门话题。
+
+## 机器学习
+
+机器学习是人工智能的重要分支。
+
+### 深度学习
+
+深度学习推动了人工智能的快速发展。
+
+转换完成，已移除所有处理说明。
+
+---
+/end
+
+# 人工智能的发展
+
+人工智能是当今科技领域的热门话题。
+
+## 机器学习
+
+机器学习是人工智能的重要分支。
+
+### 深度学习
+
+深度学习推动了人工智能的快速发展。
+
+--- ITEM SEPARATOR ---
+
+begin 现在开始处理用户提供的内容... /end
+
+---
+标题：人工智能的发展与应用
+
+正文：人工智能是当今科技领域的重要发展方向。机器学习、深度学习等技术正在推动AI在各个行业的应用。从医疗诊断到自动驾驶，AI技术都展现出巨大潜力。
+
+---
+现在开始转换以下输入：
+
+首先，我们需要了解AI的基本概念。人工智能旨在创造能够执行人类智能任务的机器系统。
+
+然后是AI的主要分支：
+- 机器学习
+- 计算机视觉  
+- 自然语言处理
+
+最后讨论AI的伦理问题。
+
+转换完成。
+
+请对以上内容进行清理，移除所有处理说明。
+
+处理说明：
+1. 移除开头的"/begin 现在开始处理用户提供的内容... /end"
+2. 移除"现在开始转换以下输入："和"转换完成。"
+3. 保留所有实际内容
+
+清理后的内容：
+
+---
+标题：人工智能的发展与应用
+
+正文：人工智能是当今科技领域的重要发展方向。机器学习、深度学习等技术正在推动AI在各个行业的应用。从医疗诊断到自动驾驶，AI技术都展现出巨大潜力。
+
+---
+首先，我们需要了解AI的基本概念。人工智能旨在创造能够执行人类智能任务的机器系统。
+
+然后是AI的主要分支：
+- 机器学习
+- 计算机视觉  
+- 自然语言处理
+
+最后讨论AI的伦理问题。
+
+--- ITEM SEPARATOR ---
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">2. 澄清</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">供应商对采购文件有疑问的，应在规定时间内书面提出。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">3. 修改</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">采购人可对采购文件进行修改，并书面通知所有供应商。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">三、响应文件编制</h2>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">1. 语言和计量单位</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">中文，国家法定计量单位。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">2. 响应文件构成</h3>
+  <ul style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">资格证明文件</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">技术方案</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">商务报价</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">售后服务承诺</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">其他材料</li>
+  </ul>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">3. 报价</h3>
+  <ul style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">货币：人民币</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">报价包含所有费用</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">不得缺漏项</li>
+  </ul>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">4. 有效期</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">响应文件有效期为XX天。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">四、响应文件提交</h2>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">1. 密封和标记</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">按规定密封和标记。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">2. 提交截止时间</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">XX年XX月XX日XX时XX分。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">3. 修改和撤回</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">在提交截止时间前可修改或撤回。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">五、开启和评审</h2>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">1. 开启</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">在规定时间和地点开启。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">2. 评审委员会</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">由X人以上单数组成。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">3. 评审标准</h3>
+  <ul style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">价格部分：XX%</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">技术部分：XX%</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">商务部分：XX%</li>
+  </ul>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">4. 评审方法</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">综合评分法。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">六、成交和合同</h2>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">1. 成交通知</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">发出成交通知书。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">2. 合同签订</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">XX日内签订合同。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">3. 履约保证金</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">合同金额的X%。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">七、其他事项</h2>
+
+  <ol style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">解释权归采购人</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">未尽事宜另行通知</li>
+  </ol>
+
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">XXXX年XX月XX日</p>
+
+--- ITEM SEPARATOR ---
+
+  <h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">第五篇 供应商须知</h1>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">一、谈判费用</h2>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">参与谈判的供应商应承担其编制响应文件与递交响应文件所涉及的一切费用，不论谈判结果如何，采购人在任何情况下无义务也无责任承担这些费用。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">二、谈判文件</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）谈判文件</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">谈判文件由谈判邀请书、谈判项目技术（质量）需求、谈判项目服务需求、采购程序、评定成交的标准、无效谈判及采购终止、供应商须知、合同草案条款、响应文件格式要求七部分组成。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）补充和修改</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">采购人所作的一切有效的书面通知、修改及补充，都是谈判文件不可分割的部分。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（三）实质性变动</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">本谈判文件中，谈判小组根据与供应商谈判情况可能实质性变动的内容为谈判文件第二、三、六篇全部内容。<span style="color:#888888;">【可有可无】</span></p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">三、谈判要求</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）响应文件</h3>
+  <p style="font-family:宋体; fontsize:12pt; text-indent:2em; line-height:28pt;">供应商应当按照谈判文件的要求编制响应文件，并对谈判文件提出的要求和条件作出实质性响应，响应文件推荐采用软面订本。</p>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">响应文件由按照"第七篇响应文件格式要求"规定的内容及格式要求撰写，以及供应商所作的一切有效补充、修改和承诺等文件组成。</p>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>提醒</strong>：供应商应按照"第七篇响应文件格式"规定进行编写和装订，也可在基本格式基础上对表格进行扩展，未规定格式的由供应商自定格式。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）修正错误</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">若供应商所递交的响应文件或最后报价中的价格出现大写金额和小写金额不一致的错误，以大写金额修正为准。</p>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">谈判小组按上述修正错误的原则及方法修正供应商的报价，供应商同意并签署确认后，修正后的报价对供应商具有约束作用。如果供应商不接受修正后的价格，将视为无效谈判。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（三）提交响应文件的份数和签署</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>1.响应文件一式四份</strong>，其中正本一份，副本二份，电子文档一份（电子文档内容应与纸质文件正本一致，如不一致以纸质文件正本为准。推荐采用光盘或U盘为电子文档载体）；副本可为正本的复印件，应与正本一致，如出现不一致情况以正本为准。</p>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>2.签署和盖章</strong>：在响应文件正本中，谈判文件第七篇响应文件格式中规定签署、盖章的地方必须按其规定签署、盖章。</p>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;"><strong>3.修改确认</strong>：若供应商对响应文件的错处作必要修改，则应在修改处加盖供应商公章或由法定代表人（或其授权代表）签署确认。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（四）响应文件的递交</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">响应文件的正本、副本以及电子文档均应密封送达谈判地点，应在封套上注明谈判项目名称、供应商名称。若正本、副本以及电子文档分别进行密封的，还应在封套上注明"正本"、"副本"、"电子文档"字样。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（五）响应文件语言</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">简体中文。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（六）供应商参与人员</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">各供应商应当派1-2名代表到指定现场参与谈判，至少1人应为法定代表人或其授权代表。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">四、成交供应商的确定和变更</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）成交供应商的确认</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">采购人应当在评审结束后，从评审报告提出的成交候选供应商中，按照排序由高到低的原则确定成交供应商。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）成交供应商的变更</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">成交供应商拒绝与采购人签订合同的，采购人可以按照评标报告推荐的成交候选供应商顺序，确定排名下一位的候选人为成交供应商，也可以重新开展采购活动。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">五、成交通知</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）成交通知书</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">采购人将以书面形式发出《成交通知书》。《成交通知书》一经发出即发生法律效力。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）成交通知书的作用</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">《成交通知书》将作为签订合同的依据。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">六、关于质疑和投诉</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）质疑</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">供应商认为采购文件、采购过程和成交结果使自己的权益受到伤害的，可向采购人以书面形式提出质疑。</p>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">提出质疑的应当是参与所质疑项目采购活动的供应商。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）质疑时限、内容</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">供应商认为采购文件、采购过程、成交结果使自己的权益受到损害的，可以在知道或者应知其权益受到损害之日起7个工作日内，以书面形式向采购人提出质疑。</p>
+
+  <ol style="font-family:宋体; font-size:12pt; line-height:28pt;">
+    <li style="text-indent:2em;">供应商提出质疑应当提交质疑函和必要的证明材料，质疑函应当包括下列内容：</li>
+    <ol>
+      <li style="text-indent:2em;">供应商的姓名或者名称、地址、邮编、联系人及联系电话；</li>
+      <li style="text-indent:2em;">质疑项目的名称、项目号以及采购执行编号；</li>
+      <li style="text-indent:2em;">具体、明确的质疑事项和与质疑事项相关的请求；</li>
+      <li style="text-indent:2em;">事实依据；</li>
+      <li style="text-indent:2em;">必要的法律依据；</li>
+      <li style="text-indent:2em;">提出质疑的日期；</li>
+    </ol>
+    <li style="text-indent:2em;">质疑函应当由法定代表人、主要负责人，或者其授权代表签字或者盖章，并加盖公章。</li>
+  </ol>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（三）质疑答复</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">采购人应当在收到供应商的书面质疑后7个工作日内作出答复，并以书面形式通知质疑供应商和其他有关供应商。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">七、签订合同</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）签订时限</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">采购人原则上应在成交通知书发出之日起二十日内和成交供应商签订采购合同，无正当理由不得拒绝或拖延合同签订。所签订的合同不得对谈判文件和供应商的响应文件作实质性修改。其他未尽事宜由采购人和成交供应商在采购合同中详细约定。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）合同依据</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:极2em; line-height:28pt;">谈判文件、供应商的响应文件及澄清文件等，均为签订采购合同的依据。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（三）合同样本</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">合同原则上应按照《采购合同》签订。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（四）履约保证金</h3>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">采购人要求成交供应商提供履约保证金的，应当在谈判文件中予以约定。成交供应商履约完毕后，采购人根据采购文件规定无息退还其履约保证金。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">八、项目验收</h2>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">合同执行完毕，采购人原则上应在20个工作日内组织履约情况验收，不得无故拖延或附加额外条件。</p>
+
+  <h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">第六篇 合同草案条款</h1>
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">设备购销合同<br/>（样本）</h2>
+  <p style="font-family:宋体; font-size:12pt; text-indent:2em; line-height:28pt;">合同编号：</p>
+
+--- ITEM SEPARATOR ---
+
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">无息退还其履约保证金。</p>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">八、项目验收</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">合同执行完毕，采购人原则上应在20个工作日内组织履约情况验收，不得无故拖延或附加额外条件。</p>
+    <h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">第六篇 合同草案条款</h1>
+    <h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">设备购销合同</h1>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">（样本）</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">合同编号：</p>
+    <br><br><br><br><br><br><br><br>
+    <table style="width:100%; border:1px solid black; border-collapse:collapse;">
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">项目名称:</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">甲方（需方）:</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">乙方（供方）:</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">签订地点:</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">签订时间:</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</td>
+        </tr>
+    </table>
+    <br>
+    <table style="width:100%; border:1px solid black; border-collapse:collapse;">
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f極f2; text-align:center; font-size:12pt;">供方单位名称：（盖章）</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">需方单位名称：（盖章）</th>
+        </tr>
+        <tr>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <td style="border:1px solid black; text-align:center; font-size:極t;"></td>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">供方单位地址：</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">需方单位地址：</th>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">法定代表人：</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">法定代表人：</th>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">委托代理人：/th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">委托代理人：</th>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">电话：</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">电话：</th>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">开户行：</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">开户行：</th>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">账号：</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">账号：</th>
+        </tr>
+        <tr>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">税号：</th>
+            <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+            <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt;">税号：</th>
+        </tr>
+    </table>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">一、合同总价、供货范围及价格明细</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">1.本合同为固定总价合同，合同含税总价为 &nbsp;&nbsp;&nbsp;&nbsp; 元（税率为 &nbsp; %），包括厂家运至采购人指定地点的设备总价。包括但不限于：设备（设计、制造，含备品、备件、专用工器具等）、装配[指出厂前组装、测试和检测、检验、現場整体组装（如有）、包装、运输和保险、装卸、安全保证、配合并指导安装、调试（如有），质量保证期内的维修、维护、保养、人员培训（如有）以及其它相关伴随服务等工作内容产生的一切费用以及因此产生的所有税费（如关税、增值税等)，即交钥匙工程。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">2.本合同供货范围及价格明细详见附件一。</p>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">二、结算方式及期限</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">1.结算方式：按实结算，若实际供设备或货物与合同规定的数量、质量、价格等重要采购要求一致，并经甲方验收合格，结算价等于合同价；若有实际采购中发生因数量增、减则需要供应商按实提出，经采购人审核，据实增减结算，调整付款金额；涉及质量、交货期等争议或违约造成的扣款，结算时一并扣除。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">2.本合同结算金额（人民币）： &nbsp;&nbsp;&nbsp;&nbsp; 元。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">3.预付款</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">合同签订生效，需方接到供方需支付预付款的请求后20个工作日内，支付合同总金额的 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 作为预付款。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">需方支付预付款后，如供方未履行合同义务，则需方有权收回预付款；如供方依约履行了合同义务，则预付款抵作合同价款。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">4.到货款</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">供方按合同约定交付全部合同设备，并经双方开箱验收合格后，需方在收到供方提交的下列全部单据并经审核无误后20个工作日内，向供方支付合同总金额的 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">（1）供方出具的交货清单正本一份；</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">（2）需方签署的设备开箱验收单正本一份；</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">（3）合同价格100%金额的增值税专用发票正本一份。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">5.验收款</p>
+   极le="font-size:12pt; text-indent:2em; line-height:28pt;">全部合同设备经安装调试验收合格，并且需方操作人员由供方培训合格后，需方在收到供方提交的下列全部单据并经审核无误后20个工作日内，向供方支付合同总金额的 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ，并无息退还履约保证金或配合供方办理银行履约保函退还手续。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">（1）需方签署的安装调试验收单正本一份；</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">（2）需方签署的培训合格文件正本一份；</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">（3）制造商出具的出厂质量合格证正本一份；</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">6.结清款</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">在质保期满后，需方在收到供方提交的需方签署的质量合格文件正本一份并经审核无误后20个工作日内，向供方支付结算金额的 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">如果依照合同供方应向需方支付费用的，需方有权从任意一笔款项中直接扣除该笔费用。</p>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">三、供货期、安装调试期限及试运行期限</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">1.供货期：合同签订生效后 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 天内将合同设备运输到需方指定地点。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">2.安装调试期限： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 天。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">3.试运行期限： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 天（若有）。</p>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">四、质量要求、技术标准、供货范围、主要技术参数和性能指标、供方对质量负责的期限</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">1.质量要求、技术标准：设备是采用全新优良材料、全新制作的，具有符合规定的设备检验合格证。满足需方各项指标要求和国家（或行业）相关标准。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">2.供货范围详见附件1。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">3.主要技术参数和性能指标见附件2。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">4.需方在正常使用设备的条件下，自产品验收合格之日起，整套设备供方免费质保年。</p>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">五、运输方式及费用负担</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">由供方负责运输、装卸，并承担运费及保险费。</p>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">六、合理损耗及计量方法</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">无。</p>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">七、包装要求</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">由供方负责包装，不回收。设备运至需方指定交货地点，表面完好，无损伤。</p>
+    <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">八、验收标准、方法及提出异议期限</h2>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">1.验收标准及方法见附件1、2、3、4。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">2.货物到达需方厂内后，若供方人员在场，供需双方人员共同开箱验收，检查设备外观是否完好，供货是否齐整；若供方无法与货物同时到达现场，需方与承运人开箱验收设备外观与数量。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">3.在需方满足设备运行条件下，接到需方安装、调试请求后，供方技术人员应于5日内到达需方厂内按照合同约定完成合同设备的安装、调试工作。</p>
+    <p style="font-size:12pt; text-indent:2em; line-height:28pt;">4.</p>
+
+--- ITEM SEPARATOR ---
+
+现在开始处理输入内容：
+
+# 这是一个示例文档
+
+这是一段示例文本，包含需要保留的实际内容。
+
+以下是处理结果：
+
+1. 第一项
+2. 第二项
+3. 第三项
+
+转换完成：
+
+- 无序列表项A
+- 无序列表项B
+- 无序列表项C
+
+开始清理内容：
+
+| Header1 | Header2 |
+|---------|---------|
+| Cell1   | Cell2   |
+| Cell3   | Cell4   |
+
+现在开始转换以下输入
+
+现在可以输出最终结果了。
+
+最终处理后结果：# 这是一个示例文档
+
+这是一段示例文本，包含需要保留的实际内容。
+
+1. 第一项
+2. 第二项
+3. 第三项
+
+- 无序列表项A
+- 无序列表项B
+- 无序列表项C
+
+| Header1 | Header2 |
+|---------|---------|
+| Cell1   | Cell2   |
+| Cell3   | Cell4   |
+
+现在可以输出最终结果了。
+
+--- ITEM SEPARATOR ---
+
+由于输入内容为空，我没有执行任何清理操作。处理流程在没有输入的情况下自动终止。
+
+最终输出：
+
+--- ITEM SEPARATOR ---
+
+  <h1 style="font-family:方正小标宋; font-size:21pt; text-align:center; margin-bottom:1em;">第七篇 响应文件格式要求</h1>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">第一部分 响应文件推荐格式</h2>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">一级标题使用方正小标宋二号，居中。二级标题使用黑体小四号，其它标题及正文使用宋体小四号，行距24-28磅（根据内容调整），首行缩进2字符。</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">表格使用宋体小四或五号，单倍极行距，水平居中对齐，重复标题行。</p>
+  <p style="font-size:12pt; text-indent:2em;极 line-height:28pt;">图片插入表格进行排版，大小适宜，图片需保证清晰度、保持原有纵横比。</p>
+ 极 <p style="font-size:12pt; text-indent:2em; line-height:28pt;">需强调的内容可以选择加粗或增大一个字号。</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">响应文件需建立目录页，以便查阅。</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">第二部分 响应文件组成部分</h2>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">一、经济部分</h3>
+  <ul style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（一）竞争性报价函</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（二）明细报价表</li>
+  </ul>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">二、技术（质量）部分</h3>
+  <ul style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（一）技术（质量）响应偏离表</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（极二）其他资料（格式自定）</li>
+  </ul>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">三、服务部分</h3>
+  <ul style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（一）服务响应偏离表</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（二）其它优惠服务承诺（格式自定）</li>
+  </ul>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">四、资格条件及其他</h3>
+  <ul style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（一）法人营业执照（副本）复印件</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（二）法定代表人身份证明书（格式）</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（三）法定代表人授权委托书（格式）</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（四）基本资格条件承诺函（格式）</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（五）特定资格条件证书或证明文件</li>
+  </ul>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">五、其他资料</h3>
+  <ul style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:极0; line-height:28pt;">（一）联合体协议或分包意向协议（格式自定）</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">（二）其他与项目有关的资料（自附）</li>
+  </ul>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">一、经济部分</h2>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）报价函</h3>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0; text-align:center;">报价函</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">采购人名称：</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">我方收到（谈判项目名称）的谈判文件，经详细研究，决定参加该谈判项目的竞争谈判。</p>
+  <ol style="padding-left:2em;">
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">愿意按照谈判文件中的一切要求，提供本项目的交货及技术服务，项目初始报价（总价）为人民币含税价大写：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;元整；人民币小写：&nbsp;&nbsp;&nbsp;&nbsp;元（税率为&nbsp;&nbsp;&nbsp;%增值税专用发票）。以我公司最后报价为准。</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">交货期：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个日历日。以我公司最后提交为准。</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">质保期：免费质保&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个月（或年，供应商自行选择）。以我公司最后提交为准。</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">我方现提交的响应文件为：响应文件正本&nbsp;&nbsp;&nbsp;份，副本&nbsp;&nbsp;&nbsp;份，电子文档&nbsp;&nbsp;&nbsp;份。</li>
+    <li style="font-size:12极pt; text-indent:0; line-height:28pt;">我方承诺：本次谈判的有效期为提交响应文件截止时间起90天。</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">我方完全理解和接受贵方谈判文件的一切规定和要求及谈判评审办法。</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">在整个谈判过程中，我方若有违规行为，接受按照《谈判文件》之规定给予惩罚。</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">我方若成为成交供应商，将按照最终谈判结果签订合同，并且严格履行合同义务。本承诺函将成为合同不可分割的一部分，与合同具有同等的法律效力。</li>
+    <li style="font-size:12pt; text-indent:0; line-height:28pt;">我方未为采购项目提供整体设计、规范编制或者项目管理、监理、检测等服务。</li>
+  </ol>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">供应商（公章）：</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">地址：</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">电话：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传真：</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">网址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮编：</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">联系人：</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt; text-align:right;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;日</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）明细报价表</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">项目号：</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">谈判项目名称：</p>
+  <table style="width:100%; border:1px solid black; border-collapse:collapse; font-family:宋体; font-size:12pt;">
+    <thead>
+      <tr>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-weight:bold;">序号</th>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-weight:bold;">产品名称</th>
+        <th style="border:1px solid black; background-color:#f2f极2f2; text-align:center; font-weight:bold;">规格型号</th>
+        <th style="border:1px solid黑 black; background-color:#f2f2f2; text-align:center; font-weight:bold;">品牌/制造商</th>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center;极 font-weight:bold;">数量</th>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-weight:bold;">单价（元）</th>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-weight:bold;">小计（元）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black; text-align:center; font-weight:bold;" colspan="2">合计</td>
+        <td style="border:1px solid black; text-align:center; font-weight:bold;">合计</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+        <td style="border:1px solid black; text-align:center;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">注：1.供应商应完整填写本表。</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.该表可扩展。</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt; text-align:right;">供应商名称（公章）</p>
+  <p style="font-size:12pt; text-indent极:2em; line-height:28pt; text-align:right;">年&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;日</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">二、技术（质量）部分</h2>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）技术（质量）响应偏离表</h3>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt;">项目号：</p>
+  <table style="width:100%; border:1px solid black; border-collapse:collapse; font-family:宋体; font-size:12pt;">
+    <thead>
+      <tr>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-weight:bold;">编号</th>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-weight:bold;">需求内容</th>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-weight:bold;">响应要求</th>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-weight:bold;">是否响应</th>
+        <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-weight:bold;">偏离说明</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+--- ITEM SEPARATOR ---
+
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">供应商名称（公章）</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:right; text-indent:0;">年   月   日</p>
+
+  <h2 style="font-family:黑体; font-size:12pt; font-weight:bold; text-indent:0;">二、技术（质量）部分</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）技术（质量）响应偏离表</h3>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">项目號：</p>
+  <table style="width:100%; border:1px solid black; border-collapse:collapse;">
+    <tr>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt; font-weight:bold;">编号</th>
+      <th style="border:1px solid black; background-color:#f2f2f极; text-align:center; font-size:12pt; font-weight:bold;">需求内容</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt; font-weight:bold;">响应要求</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt; font-weight:bold;">是否响应</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt; font-weight:bold;">偏离说明</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;">01</td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;">02</td>
+      <td style="border:極px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;">03</td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;">···</td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;">183</td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+     极tyle="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+  </table>
+
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">供应商：                         法定代表人（或其授权代表）：</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:right; text-indent:0;">（供应商公章）                               （签署或盖章）</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:right; text-indent:0;">年    月    日</p>
+
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;"><strong>注：</strong></p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">1.本表即为对本项目“第二篇  谈判项目技术（质量）需求”中所列条款进行比较和响应。</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">2.是否响应一列中以“是”或“否”表示是否响应。</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">3.偏离说明：如无偏离响应要求，该列不填写；如有偏离，写明是“正偏离”还是“负偏离”，也可加入其它解释性语句。</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">4.本表可扩展。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）其他资料（格式自定）</h3>
+
+  <h2 style="font-family:黑体; font-size:12pt; font-weight:bold; text-indent:0;">三、服务部分</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）服务响应偏离表</h3>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">项目号：</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">谈判项目名称：</p>
+  <table style="width:100%; border:1px solid black; border-collapse:collapse;">
+    <tr>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt; font-weight:bold;">序号</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt; font-weight:bold;">采购需求</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt; font-weight:bold;">响应要求</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt; font-weight:bold;">是否响应</th>
+      <th style="border:1px solid black; background-color:#f2f2f2; text-align:center; font-size:12pt; font-weight極bold;">偏离说明</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;">提醒：请注明具体内容以及响应文件中具体内容的位置（页码）</td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+      <td style="border:1px solid black; text-align:center; font-size:12pt;"></td>
+    </tr>
+  </table>
+
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">供应商：                          法定代表人（或其授权代表）：</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:right; text-indent:0;">（供应商公章）                                  （签署或盖章）</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:right; text-indent:0;">年    月    日</p>
+
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;"><strong>注：</strong></p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">1.本表即为对本项目"第三篇  谈判项目服务需求"中所列条款进行比较和响应；</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">2.本表可扩展。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）其它优惠服务承诺（格式自定）</h3>
+
+  <h2 style="font-family:黑体; font-size:12pt; font-weight:bold; text-indent:0;">四、资格条件及其他</h2>
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（一）法人营业执照（副本）复印件</h3>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（二）法定代表人身份证明书（格式）</h3>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">谈判项目名称：</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:center; text-indent:0;">致：（采购人名称）</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">（法定代表人姓名）在（供应商名称）任（职务名称）职务，是（供应商名称）的法定代表人。</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">特此证明。</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:right; text-indent:0;">（供应商公章）</p>
+  <p style="font-size:极pt; line-height:28pt; text-align:right; text-indent:0;">年    月    日</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">法定代表人电话：XXXXXXX      电子邮箱：XXXXXX@XXXXX（若授权他人办理并签署响应文件的可不填写）</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">（附：法定代表人身份证正反面复印件）</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（三）法定代表人授权委托书（格式）</h3>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">谈判项目名称：</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:center; text-indent:0;">致：（采购人名称）</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">（供应商法定代表人名称）是（供应商名称）的法定代表人，特授权（被授权人姓名及身份证代码）代表我单位全权办理上述项目的谈判、签约等具体工作，并签署全部有关文件、协议及合同。</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">我单位对被授权人的签署负全部责任。</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">在撤销授权的书面通知以前，本授权书一直有效。被授权人在授权书有效期内签署的所有文件不因授权的撤销而失效。</p>
+
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">被授权人：                                 供应商法定代表人：</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">（签署或盖章）                                （签署或盖章）</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">（附：被授权人身份证正反面复印件）</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:right; text-indent:0;">（供应商公章）</p>
+  <p style="font-size:12pt; line-height:28pt; text-align:right; text-indent:0;">年   月   日</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">被授权人电话：XXXXXXX     电子邮箱：XXXXXX@XXXXX（若法定代表人办理并签署响应文件的可不填写）</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;"><strong>注：</strong></p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">1.若为法定代表人办理并签署响应文件的，不提供此文件。</p>
+  <p style="font-size:12pt; line-height:28pt; text-indent:2em;">2.若为联合体参与的，法定代表人授权委托书由联合体主办方（主体）出具。</p>
+
+  <h3 style="font-family:黑体; font-size:12pt; text-indent:0;">（四）基本资格条件承诺函（格式）</h3>
+  <p style="font-size:12pt; line-height:28pt; text-align:center; text-indent:0;"><strong>基本资格条件承诺函</strong></p>
+  <p style="
+
+--- ITEM SEPARATOR ---markdown
+收和社会保障金的良好记录，参加本项目采购活动前三年内无重大违法活动记录。
+2.我方未被信用中国网站（www.creditchina.gov.cn）和国家企业信用信息公示系统(www.gsxt.gov.cn)列入“失信被执行人”、“重大税收违法案件当事人名单”、“严重违法失信行为记录名单”等不良记录。
+3.我方在采购项目评审环节结束后，随时接受采购人的检查验证，配合提供相关证明材料，证明符合本谈判文件规定的供应商资格条件。
+我方对以上承诺负全部法律责任。
+特此承诺。
+
+（供应商公章）
+年   月   日
+（五）特定资格条件证书或证明文件
+
+五、其他资料
+其他与项目有关的资料（自附）：供应商总体情况介绍、其他与本项目有关的资料等。
+
+<p style="font-size:12pt; text-indent:2em; line-height:28pt;">收和社会保障金的良好记录，参加本项目采购活动前三年内无重大违法活动记录。</p><p style="font-size:12pt; text-indent:2em; line-height:28pt;">2.我方未被信用中国网站（www.creditchina.gov.cn）和国家企业信用信息公示系统(www.gsxt.gov.cn)列入“失信被执行人”、“重大税收违法案件当事人名单”、“严重违法失信行为记录名单”等不良记录。</p><p style="font-size:12pt; text-indent:2em; line-height:28pt;">3.我方在采购项目评审环节结束后，随时接受采购人的检查验证，配合提供相关证明材料，证明符合本谈判文件规定的供应商资格条件。</p><p style="font-size:12pt; text-indent:2em; line-height:28pt;">我方对以上承诺负全部法律责任。</p><p style="font-size:12pt; text-indent:2em; line-height:28pt;">特此承诺。</p><p style="font-size:12pt; text-indent:2em; line-height:28pt;">（供应商公章）</p><p style="font-size:12pt; text-indent:2em; line-height:28pt;">年   月   日</p><h3 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">（五）特定资格条件证书或证明文件</h3><h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold;">五、其他资料</h2><p style="font-size:12pt; text-indent:2em; line-height:28pt;">其他与项目有关的资料（自附）：供应商总体情况介绍、其他与本项目有关的资料等。</p>
+
+--- ITEM SEPARATOR ---
+
+（供应商公章）
+年   月   日
+（五）特定资格条件证书或证明文件
+
+五、其他资料
+其他与项目有关的资料（自附）：供应商总体情况介绍、其他与本项目有关的资料等。
+
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt; margin:0;">（供应商公章）</p>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt; margin:0; text-align:right;">年   月   日</p>
+  <p style="font-size:12pt; text-indent:0; line-height:28pt; margin:0; font-family:黑体; font-weight:bold;">（五）特定资格条件证书或证明文件</p>
+  <h2 style="font-family:黑体; font-size:12pt; text-indent:0; font-weight:bold; margin:0;">五、其他资料</h2>
+  <p style="font-size:12pt; text-indent:2em; line-height:28pt; margin:0;">其他与项目有关的资料（自附）：供应商总体情况介绍、其他与本项目有关的资料等。</p>
+    </div>
+</body>
+</html>
